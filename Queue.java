@@ -36,7 +36,9 @@ public class Queue{private Node top;
   public void destory(){
     top = null;
   }
-  
+  public String print(){
+    return "";
+  }
  public boolean isEmpty() {
     return this.top==null;
  } 
