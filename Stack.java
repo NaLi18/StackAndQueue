@@ -3,13 +3,7 @@ public class Stack{
   public Stack(){
     top = null;
   }
-  public void setTop(Node first){
-    this.top = first;
-  }
-  public Node getTop(){
-    return this.top;
-  }
-  public void add(int index, String str){
+ public void push(int index, String str){
     Node newNode = new Node(str);
       if(this.isEmpty()){
         this.top = newNode;
@@ -32,12 +26,13 @@ public class Stack{
         temp2.setPrev(newNode); 
   }
   
-  public void remove(Node node){
-    Node temp1 = node.getNext();
-    Node temp2 = node.getPrev();
-    temp1.setPrev(temp2);
-    temp2.setNext(temp1);
+  public Node pop(Node node){
+    //return and delete the top node of the stack
+   return this.top;
 
+  }
+  public Node peek(){
+    return this.top;
   }
   public void destory(){
     top = null;
