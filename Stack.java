@@ -9,10 +9,11 @@ public class Stack{
    this.top = newNode; 
  }
   
- public Node pop(Node node){
+ public Node pop(){
     //return and delete the top node of the stack
-   return this.top;
-
+   Node newNode = top;
+   this.top = this.top.getNext();
+   return newNode;
   }
   public Node peek(){
     return this.top;
