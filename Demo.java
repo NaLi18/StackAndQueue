@@ -57,9 +57,6 @@ public class Demo{
     linkedList.forward();
     */
      //test the destory method.
-    System.out.println(linkedList.size());
     linkedList.destory();
-    linkedList.forward();
-    linkedList.backward();
   }
 }
