@@ -2,7 +2,7 @@ public class Queue{private Node top;
   public Queue(){
     top = null;
   }
- public void push(int index, String str){
+ public void enqueue(int index, String str){
     Node newNode = new Node(str);
       if(this.isEmpty()){
         this.top = newNode;
@@ -25,7 +25,7 @@ public class Queue{private Node top;
         temp2.setPrev(newNode); 
   }
   
-  public Node pop(Node node){
+  public Node dequeue(Node node){
     //return and delete the top node of the stack
    return this.top;
 
