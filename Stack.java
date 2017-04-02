@@ -21,8 +21,17 @@ public class Stack{
   public void destory(){
     top = null;
   }
-  public String print(){
-    return "";
+  public void print(){
+    if(isEmpty()){
+      System.out.println("The stack is empty");
+    }
+    else{
+      Node newNode = this.top;
+      while(newNode.getNext()!=null){
+        newNode.print();
+        newNode = newNode.getNext();
+      }
+    }
   }
  public boolean isEmpty() {
     return this.top==null;
