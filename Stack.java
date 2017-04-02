@@ -1,8 +1,8 @@
-public class DoublyLinkedList{
+public class Stack{
   private Node root;
   private Node endNode;
   private int size;
-  public DoublyLinkedList(){
+  public Stack(){
     root = null;
     endNode = null;
     size = 0;

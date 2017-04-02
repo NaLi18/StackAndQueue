@@ -15,7 +15,7 @@ public class Demo{
     System.out.println(myOtherNode.getNext());
     myOtherNode.print();
     */
-    DoublyLinkedList linkedList = new DoublyLinkedList();
+    Stack linkedList = new Stack();
     /*
      //test the constructor
     System.out.println(linkedList);
