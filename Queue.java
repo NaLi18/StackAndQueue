@@ -1,6 +1,9 @@
-public class Queue{private Node top;
+public class Queue{
+  private Node top;
+  private Node earlyInput;
   public Queue(){
     top = null;
+    earlyInput = null;
   }
  public void enqueue(int index, String str){
     Node newNode = new Node(str);
