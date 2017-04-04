@@ -17,10 +17,11 @@ public class Queue{
       }
  }
   
-  public Node dequeue(Node node){
+  public Node dequeue(){
     //return and delete the top node of the stack
-   return this.top;
-
+    Node newNode = earlyInput;
+    earlyInput = earlyInput.getPrev();
+   return newNode;
   }
   public Node peek(){
     return this.top;
