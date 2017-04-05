@@ -5,15 +5,14 @@ public class Queue{
     front = null;
     back = null;
   }
- public void enqueue(String str){
-    Node newNode = new Node(str);
+ public void enqueue(Node n){
       if(this.isEmpty()){
-        this.front = newNode;
-        back = newNode;
+        this.front = n;
+        back = n;
       }
       else{
-        back.setNext(newNode);
-        back = newNode;
+        back.setNext(n);
+        back = n;
       }
  }
   
