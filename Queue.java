@@ -1,38 +1,40 @@
 public class Queue{
-  private Node top;
-  private Node earlyInput;
+  private Node front;
+  private Node back;
   public Queue(){
-    top = null;
-    earlyInput = null;
+    front = null;
+    back = null;
   }
  public void enqueue(String str){
     Node newNode = new Node(str);
       if(this.isEmpty()){
-        this.top = newNode;
-        earlyInput = newNode;
+        this.front = newNode;
+        back = newNode;
       }
       else{
-        newNode.setNext(top);
-        top = newNode;
+        back.setNext(newNode);
+        back = newNode;
       }
  }
   
   public Node dequeue(){
-    //return and delete the top node of the stack
-    Node newNode = earlyInput;
-    earlyInput = earlyInput.getPrev();
+    //return and delete the front node of the stack
+    Node newNode = front;
+    front = front.getNext();
+    if(front == null)
+      back = null;
    return newNode;
   }
   public Node peek(){
-    return this.top;
+    return this.front;
   }
   public void destory(){
-    top = null;
+    front = null;
   }
   public String print(){
     return "";
   }
  public boolean isEmpty() {
-    return this.top==null;
+    return this.front==null;
  } 
 }
