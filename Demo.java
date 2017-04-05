@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Demo{
   public static void main(String[] args){
-    //Debugger the push and print method of the Stack class
+    //Test the push and print method of the Stack class
    Stack color = new Stack();
    color.push("Black");
    color.push("White");
@@ -11,6 +11,11 @@ public class Demo{
    color.push("Orange");
    color.push("Grey");
    color.push("Brown");
+   color.print();
+   //Test the pop method
+   System.out.print("Remove the item :");
+   color.pop().print();
+   System.out.println("The new list is:");
    color.print();
   }
 }
