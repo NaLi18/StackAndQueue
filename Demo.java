@@ -17,5 +17,8 @@ public class Demo{
    color.pop().print();
    System.out.println("The new list is:");
    color.print();
+   //Test the peek method
+   System.out.print("Now, the top item is:");
+   color.peek().print();
   }
 }
