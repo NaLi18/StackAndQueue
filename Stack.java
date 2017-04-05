@@ -31,6 +31,7 @@ public class Stack{
         newNode.print();
         newNode = newNode.getNext();
       }
+      newNode.print();
     }
   }
  public boolean isEmpty() {
