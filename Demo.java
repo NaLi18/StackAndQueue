@@ -23,11 +23,13 @@ public class Demo{
    System.out.print("Now, the top item is:");
    color.peek().print();
    */
+   /*
    //Move the contents of a stack to a queue
    Queue hue = new Queue();
    stackToQueue(color,hue);
    System.out.println("The items of Queue is:");
    hue.print();
+   */
    /*
    //Test the dequeue method of the Queue class
    System.out.print("Remove the item :");
@@ -41,7 +43,7 @@ public class Demo{
    System.out.println("The items of Stack2 is:");
    color2.print();
    */
-   stackToStack(color2, color);
+   stackToStack(color2,color);
    System.out.println("The items of Stack2 is:");
    color2.print();
   }
@@ -60,9 +62,13 @@ public class Demo{
       st.push(temp.pop());
     }
   }
-  private static void stackToStack(Stack st1,Stack st2){
-    st2.print();
-    while(!st1.isEmpty()){
+  private static void stackToStack(Stack st1, Stack st2){
+    Stack temp = new Stack();
+    while(!st2.isEmpty()){
+      temp.push(st2.pop());
+    }
+    while(!temp.isEmpty()){
+      st1.push(temp.pop());
     }
   }
 }
