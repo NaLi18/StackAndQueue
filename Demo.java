@@ -41,7 +41,7 @@ public class Demo{
    System.out.println("The items of Stack2 is:");
    color2.print();
    */
-   stackToStack(color, color2);
+   stackToStack(color2, color);
    System.out.println("The items of Stack2 is:");
    color2.print();
   }
@@ -61,5 +61,8 @@ public class Demo{
     }
   }
   private static void stackToStack(Stack st1,Stack st2){
+    st2.print();
+    while(!st1.isEmpty()){
+    }
   }
 }
