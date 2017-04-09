@@ -36,7 +36,12 @@ public class Demo{
    hue.print();
    */
    Stack color2 = new Stack();
+   /*
    queueToStack(color2,hue);
+   System.out.println("The items of Stack2 is:");
+   color2.print();
+   */
+   stackToStack(color, color2);
    System.out.println("The items of Stack2 is:");
    color2.print();
   }
@@ -55,5 +60,6 @@ public class Demo{
       st.push(temp.pop());
     }
   }
-  
+  private static void stackToStack(Stack st1,Stack st2){
+  }
 }
