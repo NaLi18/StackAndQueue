@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/*
+ * Name:Na Li
+ * Lab: 2:45pm - 3:40pm, Monday
+ */
 public class Demo{
   public static void main(String[] args){
     //Test the push and print method of the Stack class
