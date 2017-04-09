@@ -8,7 +8,10 @@ public class Stack{
    newNode.setNext(top);
    this.top = newNode; 
  }
-  
+ public void push(Node n){
+   n.setNext(top);
+   this.top = n;
+ }
  public Node pop(){
     //return and delete the top node of the stack
    Node newNode = top;
