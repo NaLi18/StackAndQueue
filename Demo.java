@@ -24,7 +24,7 @@ public class Demo{
    color.peek().print();
    */
    /*
-   //Move the contents of a stack to a queue
+   ////Test the stackToQueue method
    Queue hue = new Queue();
    stackToQueue(color,hue);
    System.out.println("The items of Queue is:");
@@ -39,20 +39,32 @@ public class Demo{
    */
    Stack color2 = new Stack();
    /*
+   //Test the queueToStack method
    queueToStack(color2,hue);
    System.out.println("The items of Stack2 is:");
    color2.print();
    */
+   //Test the stackToStack method
    stackToStack(color2,color);
    System.out.println("The items of Stack2 is:");
    color2.print();
   }
+  /*
+   * The stackToQueue method move all the content of stack to queue
+   * @param st the stack which content will be moved.
+   * @param que the empty queue.
+   */
   private static void stackToQueue(Stack st, Queue que){
     //Test the enqueue method of Queue class
      while(!st.isEmpty()){
         que.enqueue(st.pop());
      }
    }
+  /*
+   * The queueToStack move all the content of queue to stack
+   * @param st the empty stack
+   * @param que the queue which content will be moved
+   */
   private static void queueToStack(Stack st, Queue que){
     Stack temp = new Stack();
     while(!que.isEmpty()){
@@ -62,6 +74,11 @@ public class Demo{
       st.push(temp.pop());
     }
   }
+  /*
+   * The stackToStack method move all the content of stack1 to stack2
+   * @param st1 the empty Stack.
+   * @param st2 the Stack which content will be moved
+   */
   private static void stackToStack(Stack st1, Stack st2){
     Stack temp = new Stack();
     while(!st2.isEmpty()){
