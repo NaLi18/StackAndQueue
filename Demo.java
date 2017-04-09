@@ -13,7 +13,7 @@ public class Demo{
    color.push("Purple");
    System.out.println("The items of Stack is:");
    color.print();
-
+   /*
    //Test the pop method
    System.out.print("Remove the item :");
    color.pop().print();
@@ -22,13 +22,20 @@ public class Demo{
    //Test the peek method
    System.out.print("Now, the top item is:");
    color.peek().print();
-   
+   */
+   //Move the contents of a stack to a queue
    Queue hue = new Queue();
    stackToQueue(color,hue);
    System.out.println("The items of Queue is:");
    hue.print();
+   //Test the dequeue method of the Queue class
+   System.out.print("Remove the item :");
+   hue.dequeue().print();
+   System.out.println("The new list is:");
+   hue.print();
   }
   private static void stackToQueue(Stack list1, Queue list2){
+    //Test the enqueue method of Queue class
      while(!list1.isEmpty()){
         list2.enqueue(list1.pop());
      }
