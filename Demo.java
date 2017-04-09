@@ -76,6 +76,7 @@ public class Demo{
     while(!temp.isEmpty()){
       st.push(temp.pop());
     }
+    temp.destory();
   }
   /*
    * The stackToStack method move all the content of stack1 to stack2
@@ -90,5 +91,6 @@ public class Demo{
     while(!temp.isEmpty()){
       st1.push(temp.pop());
     }
+    temp.destory();
   }
 }
