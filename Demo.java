@@ -13,7 +13,7 @@ public class Demo{
    color.push("Purple");
    System.out.println("The items of Stack is:");
    color.print();
-   /*
+
    //Test the pop method
    System.out.print("Remove the item :");
    color.pop().print();
@@ -22,7 +22,7 @@ public class Demo{
    //Test the peek method
    System.out.print("Now, the top item is:");
    color.peek().print();
-   */
+   
    Queue hue = new Queue();
    stackToQueue(color,hue);
    System.out.println("The items of Queue is:");

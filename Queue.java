@@ -41,6 +41,7 @@ public class Queue{
         newNode.print();
         newNode = newNode.getNext();
       }
+      newNode.print();
     }
   }
  public boolean isEmpty() {
