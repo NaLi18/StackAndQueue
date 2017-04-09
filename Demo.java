@@ -11,7 +11,9 @@ public class Demo{
    color.push("Orange");
    color.push("Indigo");
    color.push("Purple");
+   System.out.println("The items of Stack is:");
    color.print();
+   /*
    //Test the pop method
    System.out.print("Remove the item :");
    color.pop().print();
@@ -20,15 +22,15 @@ public class Demo{
    //Test the peek method
    System.out.print("Now, the top item is:");
    color.peek().print();
-   stackToQueue(color);
+   */
+   Queue hue = new Queue();
+   stackToQueue(color,hue);
+   System.out.println("The items of Queue is:");
+   hue.print();
   }
-   private static void stackToQueue(Stack nodes){
-     Queue hue = new Queue();
-     while(nodes.pop().getNext()!= null){
-       hue.enqueue(nodes.pop());
-       System.out.println("test");
+  private static void stackToQueue(Stack list1, Queue list2){
+     while(!list1.isEmpty()){
+        list2.enqueue(list1.pop());
      }
-     hue.print();
-   }
-     
+   } 
   }
